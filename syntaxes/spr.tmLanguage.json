@@ -448,6 +448,10 @@
 		"storage_types": {
 			"patterns": [
 				{
+					"match": "\\bstr\\b",
+					"name": "storage.type.string.cki"
+				},
+				{
 					"match": "\\bbool\\b",
 					"name": "storage.type.boolean.cki"
 				},
