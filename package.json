@@ -1,0 +1,37 @@
+{
+  "name": "cookie",
+  "displayName": "Cookie",
+  "description": "Cookie programming language syntax highlighting for VS Code",
+  "version": "0.0.1",
+  "publisher": "cookieforpres",
+  "icon": "icons/cookie.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cookieforpres/cookie-syntax.git"
+  },
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Visualization",
+    "Linters"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cki",
+      "aliases": [],
+      "extensions": [".cki"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icons/cookie.png",
+        "dark": "./icons/cookie.png"
+      }
+    }],
+    "grammars": [{
+      "language": "cookie",
+      "scopeName": "cookie.cki",
+      "path": "./syntaxes/spr.tmLanguage.json"
+    }]
+  }
+}
