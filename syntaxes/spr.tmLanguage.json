@@ -482,6 +482,10 @@
 				{
 					"match": "\\bany\\b",
 					"name": "storage.type.any.cki"
+				},
+				{
+					"match": "\\btype\\b",
+					"name": "storage.type.type.cki"
 				}
 			]
 		},
