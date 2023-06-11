@@ -92,7 +92,7 @@
 		},
 		{
 			"comment": "function declarations",
-			"match": "^(\\bfn\\b)(?:\\s+(\\([^\\)]+\\)\\s+)?(\\w+)(?=\\())?",
+			"match": "^(\\bfn\\b)(?:\\s+(\\([^\\)]+\\)\\s+)?(\\w+)(?=[*]?\\())?",
 			"captures": {
 				"1": {
 					"name": "keyword.function.cki"
@@ -123,7 +123,7 @@
 		},
 		{
 			"comment": "functions",
-			"match": "(\\bfn\\b)|(\\w+)(?=[*]?\\()",
+			"match": "(\\bfn\\b)|(\\w+)(?=\\()",
 			"captures": {
 				"1": {
 					"name": "keyword.function.cki"
