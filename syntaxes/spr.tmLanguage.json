@@ -87,7 +87,7 @@
 		},
 		{
 			"comment": "built-in functions",
-			"match": "\\b(printf|fprintf|sprintf|scanf|fscanf|sscanf|real|real_lhs|narrow|round|trunc|ceil|floor|fabs|sqrt|sin|cos|atan|atan2|exp|log|new|make|makefromarr|makefromstr|maketoarr|maketostr|copy|append|insert|delete|slice|len|cap|sizeof|sizeofself|selfhasptr|selftypeeq|valid|validkey|keys|fiberspawn|fibercall|fiberalive|exit|error)\\b(?=\\()",
+			"match": "\\b(printf|fprintf|sprintf|scanf|fscanf|sscanf|real|real_lhs|narrow|round|trunc|ceil|floor|fabs|sqrt|sin|cos|atan|atan2|exp|log|new|make|makefromarr|makefromstr|maketoarr|maketostr|copy|append|insert|delete|slice|len|cap|sizeof|sizeofself|selfhasptr|selftypeeq|valid|validkey|keys|crumbspawn|crumbcall|crumbalive|exit|error)\\b(?=\\()",
 			"name": "support.function.builtin.cki"
 		},
 		{
@@ -476,8 +476,8 @@
 					"name": "storage.type.numeric.cki"
 				},
 				{
-					"match": "\\bfiber\\b",
-					"name": "storage.type.fiber.cki"
+					"match": "\\bcrumb\\b",
+					"name": "storage.type.crumb.cki"
 				},
 				{
 					"match": "\\bany\\b",
