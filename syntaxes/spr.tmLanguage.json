@@ -456,6 +456,10 @@
 					"name": "storage.type.string.cki"
 				},
 				{
+					"match": "\\bchar\\b",
+					"name": "storage.type.char.cki"
+				},
+				{
 					"match": "\\bbool\\b",
 					"name": "storage.type.boolean.cki"
 				},
