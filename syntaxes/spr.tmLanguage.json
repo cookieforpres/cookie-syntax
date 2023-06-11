@@ -87,12 +87,12 @@
 		},
 		{
 			"comment": "built-in functions",
-			"match": "\\b(len|int|float|str|bytes|typeof|open|exit|print|printf|println|sprintf|input)\\b(?=\\()",
+			"match": "\\b(len|error|exit|printf|sprintf)\\b(?=\\()",
 			"name": "support.function.builtin.cki"
 		},
 		{
 			"comment": "function declarations",
-			"match": "^(\\bfunc\\b)(?:\\s+(\\([^\\)]+\\)\\s+)?(\\w+)(?=\\())?",
+			"match": "^(\\bfn\\b)(?:\\s+(\\([^\\)]+\\)\\s+)?(\\w+)(?=\\())?",
 			"captures": {
 				"1": {
 					"name": "keyword.function.cki"
@@ -123,7 +123,7 @@
 		},
 		{
 			"comment": "functions",
-			"match": "(\\bfunc\\b)|(\\w+)(?=\\()",
+			"match": "(\\bfn\\b)|(\\w+)(?=\\()",
 			"captures": {
 				"1": {
 					"name": "keyword.function.cki"
@@ -147,7 +147,7 @@
 		},
 		{
 			"comment": "language constants",
-			"match": "\\b(true|false|nil)\\b",
+			"match": "\\b(true|false|null)\\b",
 			"name": "constant.language.cki"
 		},
 		{
@@ -350,12 +350,16 @@
 			"patterns": [
 				{
 					"comment": "flow control keywords",
-					"match": "\\b(break|case|const|continue|default|else|for|fn|import|interface|if|in|map|return|str|struct|switch|type|var|weak)\\b",
+					"match": "\\b(break|case|continue|default|else|for|if|map|return)\\b",
 					"name": "keyword.control.cki"
 				},
 				{
 					"match": "\\bconst\\b",
 					"name": "keyword.const.cki"
+				},
+				{
+					"match": "\\bvar\\b",
+					"name": "keyword.var.cki"
 				},
 				{
 					"match": "\\bfn\\b",
