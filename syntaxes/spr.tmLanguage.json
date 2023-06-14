@@ -486,6 +486,10 @@
 				{
 					"match": "\\btype\\b",
 					"name": "storage.type.type.cki"
+				},
+				{
+					"match": "\\bstruct\\b",
+					"name": "storage.type.struct.cki"
 				}
 			]
 		},
